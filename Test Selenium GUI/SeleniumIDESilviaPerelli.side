@@ -1,0 +1,86 @@
+{
+  "id": "f40c751b-192b-4b46-9ef9-a87cbda84c01",
+  "version": "2.0",
+  "name": "PerelliSeleniumIDE",
+  "url": "https://convertlive.com/it/u/convertire/chilometri/a/metri",
+  "tests": [{
+    "id": "cfc7dbcd-8cbd-448f-9b73-12af42219361",
+    "name": "TestConvertion",
+    "commands": [{
+      "id": "2cd273c5-3dc4-4298-8afb-4cda778384d6",
+      "comment": "",
+      "command": "open",
+      "target": "https://convertlive.com/it/u/convertire/chilometri/a/metri",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a25a5ed-8afc-4961-a95e-6ec3f7bace00",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a45c159e-36de-401e-9539-4d89fb6f3a5f",
+      "comment": "",
+      "command": "click",
+      "target": "id=convert-value",
+      "targets": [
+        ["id=convert-value", "id"],
+        ["css=#convert-value", "css:finder"],
+        ["xpath=//input[@id='convert-value']", "xpath:attributes"],
+        ["xpath=//form[@id='converter']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "008a5a2b-8745-4b7b-b1ed-a6a823ae32c1",
+      "comment": "",
+      "command": "type",
+      "target": "id=convert-value",
+      "targets": [
+        ["id=convert-value", "id"],
+        ["css=#convert-value", "css:finder"],
+        ["xpath=//input[@id='convert-value']", "xpath:attributes"],
+        ["xpath=//form[@id='converter']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8"
+    }, {
+      "id": "6a623875-f74f-47c8-97b4-178a31b918c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=convert-submit",
+      "targets": [
+        ["id=convert-submit", "id"],
+        ["css=#convert-submit", "css:finder"],
+        ["xpath=//input[@id='convert-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='converter']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f720dbfc-ce45-4a08-8dda-a01ec4dd7ca1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.result-to",
+      "targets": [
+        ["css=.result-to", "css:finder"],
+        ["xpath=//form[@id='converter']/div[4]/p/span[4]", "xpath:idRelative"],
+        ["xpath=//span[4]", "xpath:position"],
+        ["xpath=//span[contains(.,'8000')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a82c5709-6d48-4b6d-a98c-7c59fd3ef92f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cfc7dbcd-8cbd-448f-9b73-12af42219361"]
+  }],
+  "urls": ["https://convertlive.com/it/u/convertire/chilometri/a/metri"],
+  "plugins": []
+}
